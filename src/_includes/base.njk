@@ -1,0 +1,8 @@
+---
+pagination:
+  data: testdata
+  size: 1
+---
+{%- for item in pagination.items %}
+  <li>{{ item.title }}={{ item.hostId }}</li>
+{% endfor -%}
